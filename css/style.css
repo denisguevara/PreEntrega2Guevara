@@ -1,0 +1,170 @@
+/* Reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Menu */
+nav{
+    border: 1px solid black;
+}
+ul li {
+    list-style: none;
+    display: inline;
+    position:relative;
+}
+
+ul li a {
+    padding: 10px 20px;
+    margin: 0 0px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    min-width: 200px;
+    text-align:center; 
+}
+
+ul li a:hover{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+
+/* Submenu */
+
+ul li ul {
+    display: none;/* oculto en reposo */
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+ul li:hover ul {
+    display: block;/* visible mouse hover */
+}
+ul li ul li a {
+    font-size: 12px;
+    text-align: left;
+}
+
+/* CSS para el header */
+
+.flexContainerCabeza{
+    height: 170px;
+    display:flex;
+    background-image: url(../img/hinchada-river-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexContainerCabeza .flex-item.logo {
+    margin: 30px 20px;
+}
+
+.flexContainerCabeza .flex-item.titulo{
+    color:white; 
+    display: flex;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 50px;
+}
+
+/* CSS para Inicio */
+main{
+    margin-left:40px;
+    margin-top:110px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.cuerpo .noticia {
+    display:flex;
+    
+}
+
+.cuerpo .noticia img{
+    width: 400px;
+    height: auto;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.cuerpo .noticia .item{
+    margin-left: 15px;
+}
+
+/* CSS para goles */
+
+.cuerpoGoles{
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cuerpoGoles .goles iframe{
+    width: 340px;
+    heigth: auto;
+}
+
+.cuerpoGoles p{
+    font-size: 20px;
+}
+
+/* CSS para fotos */
+.cuerpoFotos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cuerpo .cuerpoFotos .foto a img{
+    width: 280px;
+    height: 180px;
+}
+
+.cuerpo .cuerpoFotos .foto a img:hover{
+    border: 4px solid red;
+}
+
+/* CSS para canciones */
+
+.cuerpo .cuerpoCanciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CSS para titulos */
+
+.cuerpo .cuerpoTitulos .subtitulo .copaPadre .copa1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.cuerpo .cuerpoTitulos .subtitulo .copaPadre img{
+    width: 80px;
+    height: auto;
+}
+
+.cuerpo .cuerpoTitulos .subtitulo .copaPadre .copa1 .copaHijo p{
+    text-align: center;
+    font-weight: bold;
+    font-size:larger ;
+}
+
+.cuerpo .cuerpoTitulos .subtitulo .copaPadre .copa1 h3{
+    margin-right:30px;
+}
+
