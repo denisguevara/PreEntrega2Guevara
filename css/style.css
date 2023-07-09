@@ -97,11 +97,11 @@ h2{
     flex-direction: column;
     gap: 40px;
     
-}
+} 
 
-.cuerpo .noticia .item{
+/* .cuerpo .noticia .item{
     margin-left: 15px;
-}
+} */
 
 /* CSS para goles */
 

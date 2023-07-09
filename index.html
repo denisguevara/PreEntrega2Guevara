@@ -7,57 +7,69 @@
     <title>Inicio</title>
     <link rel="shortcut icon" href="./img/logo-river.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div>
-            <div class="flexContainerCabeza">
-                <div class="flex-item logo">
-                    <img src="./img/logo-river.png" alt="Logo river plate">
-                </div>
-                <div class="flex-item titulo">
-                    <h1>Página Informativa Club Atlético River Plate</h1>
-                </div>
-            </div>
-            
-            <div >
-                <nav>
-                    <ul class="menu">
-                        
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Multimedia</a>
-                            <ul>
-                                <li><a href="./pages/fotos.html">Fotos</a></li>
-                                <li><a href="./pages/canciones.html">Canciones</a></li>
-                                <li><a href="./pages/goles.html">Top 10 goles</a></li>
-                            </ul>
-                        </li>   
-                        <li><a href="./pages/titulos.html">Títulos</a></li>
-                        <li><a href="./pages/idolos.html">Ídolos</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Multimedia
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./pages/fotos.html">Fotos</a></li>
+                      <li><a class="dropdown-item" href="./pages/canciones.html">Canciones</a></li>
+                      <li><a class="dropdown-item" href="./pages/goles.html">Top 10 goles</a></li>
                     </ul>
-                </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
     <main>
         <h2>Noticias Principales</h2>
         <div class="cuerpo">
             <div class="noticia">
-                <img src="./img/festejo-river.jpg" alt="" >
-                <div class="item">
-                    <h3>River derrotó a Fluminense y sigue en carrera</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae tempore quam quo deserunt dolore itaque eligendi alias accusantium. Possimus illo nisi dolore iste quae fuga voluptate vero! Nemo quam vitae suscipit sunt sint sed asperiores dolorum quisquam harum obcaecati voluptatibus et dicta magnam.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12 col-lg-6">
+                            <img src="./img/festejo-river.jpg" alt="" >
+                        </div>
+                        <div class="item col-sm-12 col-lg-6">
+                            <h3>River derrotó a Fluminense y sigue en carrera</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae tempore quam quo deserunt dolore itaque eligendi alias accusantium. Possimus illo nisi dolore iste quae fuga voluptate vero! Nemo quam vitae suscipit sunt sint sed asperiores dolorum quisquam harum obcaecati voluptatibus et dicta magnam.</p>
+                        </div>
+   
+                    </div>
                 </div>      
             </div>
 
             <div class="noticia">
-                <img src="./img/river-vs-talleres.png" alt="">
-                <div class="item">
-                    <h3>Talleres ganó y se enfrentará al millonario por copa Argentina</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro officiis excepturi odio labore mollitia! Unde atque reprehenderit libero error facere rem tempore quaerat. Modi obcaecati harum nemo cupiditate rerum!</p>
-                </div>
-                
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-sm-12 col-lg-6">
+                            <img src="./img/river-vs-talleres.png" alt="" >
+                        </div>
+                        <div class="item col-sm-12 col-lg-6">
+                            <h3>Talleres ganó y se enfrentará al millonario por copa Argentina</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae tempore quam quo deserunt dolore itaque eligendi alias accusantium. Possimus illo nisi dolore iste quae fuga voluptate vero! Nemo quam vitae suscipit sunt sint sed asperiores dolorum quisquam harum obcaecati voluptatibus et dicta magnam.</p>
+                        </div>
+   
+                    </div>
+                </div>      
             </div>
         </div>
         
@@ -67,5 +79,10 @@
         
     </footer>
     
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
