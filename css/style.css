@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* Menu */
 nav{
@@ -51,7 +52,9 @@ ul li ul li a {
 
 .flexContainerCabeza{
     height: 170px;
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 7fr;
+    flex-direction: row;
     background-image: url(../img/hinchada-river-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,23 +62,25 @@ ul li ul li a {
 
 .flexContainerCabeza .flex-item.logo {
     margin: 30px 20px;
+    
 }
 
 .flexContainerCabeza .flex-item.titulo{
     color:white; 
     display: flex;
-    align-items: center;
-    
+    align-items:center;
+    justify-content: start;
 }
 
 h1{
     font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* CSS para Inicio */
 main{
     margin-left:40px;
-    margin-top:110px;
+    margin-top:80px;
 }
 
 h2{
@@ -99,9 +104,9 @@ h2{
     
 } 
 
-/* .cuerpo .noticia .item{
-    margin-left: 15px;
-} */
+.cuerpo .noticia .item{
+    align-items: start;
+}
 
 /* CSS para goles */
 
