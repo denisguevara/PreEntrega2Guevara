@@ -1,0 +1,279 @@
+/* Reset css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar-var {
+  position: sticky;
+}
+
+/* Menu */
+nav {
+  border: 1px solid black;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  position: relative;
+  margin: 0px !important;
+}
+ul li a {
+  padding: 10px 20px;
+  margin: 0px 0px !important;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  font-size: 12px;
+}
+ul li a:hover {
+  background-color: red;
+  color: white !important;
+  font-weight: bold;
+}
+ul li ul {
+  display: none; /* oculto en reposo */
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+ul li ul li a {
+  font-size: 12px;
+  text-align: left;
+}
+ul li ul li a:hover {
+  background-color: red !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+ul li:hover ul {
+  display: block; /* visible mouse hover */
+}
+
+/* CSS para el header */
+.flexContainerCabeza {
+  height: 170px;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  flex-direction: row;
+  background-image: url(../img/hinchada-river-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flexContainerCabeza .logo {
+  margin: 30px 20px;
+}
+.flexContainerCabeza .titulo {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* CSS para Inicio */
+main {
+  margin-left: 40px;
+  margin-top: 80px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.cuerpo {
+  margin-left: 0px;
+  margin-top: 50px;
+}
+.cuerpo .cuerpoInicio {
+  display: grid;
+  flex-wrap: nowrap;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: start;
+  gap: 20px;
+}
+.cuerpo .cuerpoInicio .noticia1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.cuerpo .cuerpoInicio .noticia1 .item1 {
+  align-items: start;
+  width: 450px;
+  height: 275px;
+  background-image: url(../img/festejo-river.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cuerpo .cuerpoInicio .noticia2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.cuerpo .cuerpoInicio .noticia2 .item2 {
+  align-items: start;
+  width: 450px;
+  height: 275px;
+  background-image: url(../img/river-vs-talleres.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cuerpo .cuerpoInicio .noticia3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.cuerpo .cuerpoInicio .noticia3 .item3 {
+  align-items: start;
+  width: 450px;
+  height: 275px;
+  background-image: url(../img/rivercampeon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cuerpo .cuerpoInicio .noticia4 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.cuerpo .cuerpoInicio .noticia4 .item4 {
+  align-items: start;
+  width: 450px;
+  height: 275px;
+  background-image: url(../img/solari.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cuerpo .cuerpoInicio .noticias .texto {
+  position: absolute;
+  color: black;
+  -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+.cuerpo .cuerpoInicio h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.noticias:hover .item1 {
+  opacity: 0.9;
+}
+.noticias:hover .item1 .texto {
+  transform: translateY(150px);
+  display: block;
+}
+.noticias:hover .item2 {
+  opacity: 0.9;
+}
+.noticias:hover .item2 .texto {
+  transform: translateY(150px);
+  display: block;
+}
+.noticias:hover .item3 {
+  opacity: 0.9;
+}
+.noticias:hover .item3 .texto {
+  transform: translateY(150px);
+  display: block;
+}
+.noticias:hover .item4 {
+  opacity: 0.9;
+}
+.noticias:hover .item4 .texto {
+  transform: translateY(150px);
+  display: block;
+}
+
+aside {
+  position: absolute;
+  width: 250px;
+  height: 600px;
+  display: inline;
+  top: 390px;
+  right: 0px;
+  border: 1px black solid;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside .partido {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+/* CSS para goles */
+.cuerpoGoles {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.cuerpoGoles .goles iframe {
+  width: 340px;
+  height: auto;
+}
+.cuerpoGoles p {
+  font-size: 20px;
+}
+
+/* CSS para fotos */
+.cuerpoFotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cuerpoFotos .foto a img {
+  width: 280px;
+  height: 180px;
+}
+.cuerpoFotos .foto a img:hover {
+  border: 4px solid red;
+}
+
+/* CSS para canciones */
+.cuerpoCanciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* CSS para titulos */
+.cuerpoTitulos .subtitulo .copaPadre .copa1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cuerpoTitulos .subtitulo .copaPadre .copa1 .copaHijo p {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+.cuerpoTitulos .subtitulo .copaPadre .copa1 h3 {
+  margin-right: 30px;
+}
+.cuerpoTitulos .subtitulo .copaPadre img {
+  width: 80px;
+  height: auto;
+}
+
+.pie {
+  height: 200px;
+  width: auto;
+  background-color: red;
+  margin-top: 100px;
+}/*# sourceMappingURL=main.css.map */
